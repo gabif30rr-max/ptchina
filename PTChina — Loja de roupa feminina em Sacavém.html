@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PTChina — Loja de roupa feminina em Sacavém</title>
+<meta name="description" content="PTChina, loja de vestuário feminino em Sacavém. Vestidos, blusas, calças, casacos, conjuntos e acessórios. Visite-nos na Quinta do Carmo.">
+<style>
+:root{--g:#1f6b3a;--g2:#164d2a;--r:#c0272d;--gold:#b8902f;--bg:#fbfaf6;--card:#fff;--tx:#1d2420;--mut:#5b665f;--bd:#e4e1d6;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--g:#4fb56f;--g2:#2f8a4e;--r:#e5565b;--gold:#d9b254;--bg:#131a15;--card:#1b241e;--tx:#eef2ee;--mut:#a3b0a6;--bd:#2c382f;color-scheme:dark}}
+:root[data-theme="dark"]{--g:#4fb56f;--g2:#2f8a4e;--r:#e5565b;--gold:#d9b254;--bg:#131a15;--card:#1b241e;--tx:#eef2ee;--mut:#a3b0a6;--bd:#2c382f;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Georgia,"Times New Roman",serif}
+h1,h2,h3,.btn,nav a,label,.tag{font-family:"Trebuchet MS",system-ui,-apple-system,Segoe UI,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--g2);z-index:20}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--g2);color:#fff;border-bottom:3px solid var(--gold)}
+.wrap{max-width:1080px;margin:auto;padding:0 18px}
+.bar{display:flex;align-items:center;justify-content:space-between;min-height:64px;gap:12px}
+.logo{font:800 1.5rem "Trebuchet MS",sans-serif;color:#fff;text-decoration:none;letter-spacing:.5px}
+.logo span{color:#ff8a8f}
+nav{display:flex;gap:4px;flex-wrap:wrap}
+nav a{color:#fff;text-decoration:none;padding:8px 11px;border-radius:8px;font-size:.92rem}
+nav a:hover,nav a:focus-visible{background:rgba(255,255,255,.16);outline:none}
+.hero{background:linear-gradient(135deg,#164d2a,#1f6b3a 60%,#2d8a50);color:#fff;padding:64px 0}
+.hero .wrap{display:grid;gap:28px;grid-template-columns:1.2fr .8fr;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.12;margin:0 0 14px}
+.hero p{font-size:1.1rem;margin:0 0 24px;max-width:46ch;opacity:.95}
+.art{aspect-ratio:4/5;border-radius:18px;border:3px solid var(--gold);background:repeating-linear-gradient(45deg,#c0272d 0 14px,#a81f25 14px 28px);display:grid;place-items:center;text-align:center;padding:18px;font:700 1rem "Trebuchet MS",sans-serif;color:#fff}
+.btn{display:inline-block;border:0;border-radius:999px;padding:12px 22px;font-size:1rem;font-weight:700;cursor:pointer;text-decoration:none;margin:0 8px 8px 0}
+.b1{background:var(--r);color:#fff}.b2{background:#fff;color:var(--g2)}.b3{background:var(--g);color:#fff}
+.btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+section{padding:56px 0}
+h2{font-size:1.8rem;margin:0 0 8px;color:var(--g)}
+.sub{color:var(--mut);margin:0 0 26px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.cat{border-radius:14px;padding:26px 12px;text-align:center;color:#fff;font:700 1rem "Trebuchet MS",sans-serif;cursor:pointer;border:0;background:var(--g)}
+.cat:nth-child(even){background:var(--r)}
+.cards{display:grid;gap:18px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.ph{aspect-ratio:4/3;display:grid;place-items:center;color:#fff;font:600 .8rem "Trebuchet MS",sans-serif;text-align:center;padding:8px}
+.card .in{padding:14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card h3{margin:0;font-size:1.05rem}
+.tag{font-size:.75rem;color:var(--gold);text-transform:uppercase;letter-spacing:.06em}
+.new{background:var(--r);color:#fff;border-radius:6px;padding:1px 7px;font-size:.7rem;margin-left:6px}
+.price{font:700 1.15rem "Trebuchet MS",sans-serif;color:var(--g)}
+.small{font-size:.85rem;color:var(--mut)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+input,select,textarea{font:inherit;padding:10px 12px;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--tx);width:100%}
+.filters input,.filters select{width:auto;flex:1 1 170px}
+.alt{background:var(--card);border-block:1px solid var(--bd)}
+.why{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.why div{border-left:4px solid var(--gold);padding:6px 14px}
+.why h3{margin:0 0 4px;color:var(--r)}
+.two{display:grid;gap:30px;grid-template-columns:1fr 1fr}
+form{display:grid;gap:12px}
+label{font-size:.9rem;font-weight:700}
+.err{color:var(--r);font-size:.85rem;min-height:1.1em}
+.ok{background:var(--g);color:#fff;padding:12px 16px;border-radius:10px;margin-top:10px}
+dl{margin:0}dt{font:700 .85rem "Trebuchet MS",sans-serif;color:var(--gold);text-transform:uppercase;margin-top:12px}dd{margin:0}
+footer{background:var(--g2);color:#fff;padding:30px 0;border-top:3px solid var(--gold);font-size:.92rem}
+footer a{color:#ffd98a}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--r);color:#fff;border-radius:999px;padding:13px 20px;font:700 1rem "Trebuchet MS",sans-serif;text-decoration:none;box-shadow:0 4px 14px rgba(0,0,0,.3);z-index:15}
+.hidden{display:none}
+@media(max-width:760px){.hero .wrap,.two{grid-template-columns:1fr}.art{aspect-ratio:16/9}.hero{padding:40px 0}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#inicio">PT<span>China</span></a>
+<nav aria-label="Principal"><a href="#inicio">Início</a><a href="#colecoes">Coleções</a><a href="#novidades">Novidades</a><a href="#sobre">Sobre Nós</a><a href="#contactos">Contactos</a></nav>
+</div></header>
+
+<main>
+<div class="hero" id="inicio"><div class="wrap">
+<div>
+<h1>Descubra a sua próxima peça favorita</h1>
+<p>Moda feminina, variedade e novidades à sua espera na PTChina, em Sacavém.</p>
+<a class="btn b1" href="#colecoes">Explorar Coleções</a><a class="btn b2" href="#contactos">Visitar a Loja</a>
+</div>
+<div class="art" role="img" aria-label="Espaço reservado para fotografia da loja">Espaço para fotografia da fachada da loja PTChina</div>
+</div></div>
+
+<section><div class="wrap">
+<h2>Categorias</h2><p class="sub">Escolha uma categoria para ver os artigos.</p>
+<div class="grid" id="cats"></div>
+</div></section>
+
+<section class="alt" id="novidades"><div class="wrap">
+<h2>Novidades e populares</h2><p class="sub">Exemplos de apresentação. Os artigos reais serão adicionados pela loja.</p>
+<div class="cards" id="news"></div>
+</div></section>
+
+<section id="colecoes"><div class="wrap">
+<h2>Coleções</h2><p class="sub">Produtos de demonstração: preços, tamanhos e fotografias serão os da loja.</p>
+<div class="filters">
+<input id="q" type="search" placeholder="Pesquisar por nome" aria-label="Pesquisar por nome">
+<select id="fc" aria-label="Categoria"><option value="">Todas as categorias</option></select>
+<select id="fp" aria-label="Preço"><option value="">Qualquer preço</option><option value="20">Até 20 €</option><option value="40">Até 40 €</option><option value="999">Mais de 40 €</option></select>
+<select id="fn" aria-label="Novidades"><option value="">Todos</option><option value="1">Só novidades</option></select>
+</div>
+<div class="cards" id="list"></div>
+<p id="none" class="small hidden">Nenhum artigo encontrado.</p>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<h2>Porquê visitar a PTChina</h2><br>
+<div class="why">
+<div><h3>Variedade</h3><p>Vestuário feminino para diferentes estilos e ocasiões.</p></div>
+<div><h3>Experimente em loja</h3><p>Veja e experimente os artigos presencialmente.</p></div>
+<div><h3>Atendimento próximo</h3><p>Uma experiência de compra prática e agradável.</p></div>
+<div><h3>Fácil de encontrar</h3><p>Em Sacavém, na Quinta do Carmo.</p></div>
+</div>
+</div></section>
+
+<section id="sobre"><div class="wrap">
+<h2>Sobre Nós</h2>
+<p style="max-width:62ch">Na PTChina, queremos proporcionar uma experiência de compra prática e agradável, com uma seleção variada de vestuário feminino. Visite a nossa loja em Sacavém, descubra os artigos disponíveis e encontre opções para diferentes estilos e ocasiões.</p>
+</div></section>
+
+<section class="alt" id="contactos"><div class="wrap two">
+<div>
+<h2>Contactos e localização</h2>
+<dl>
+<dt>Loja</dt><dd>PTChina</dd>
+<dt>Morada</dt><dd>Quinta do Carmo, n.º 4 A<br>2685-129 Sacavém, Portugal</dd>
+<dt>Telefone</dt><dd><a href="tel:+351962779099" style="color:var(--g)">962 779 099</a></dd>
+<dt>Horário</dt><dd id="hours"></dd>
+</dl><br>
+<a class="btn b3" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Quinta+do+Carmo+4+A+2685-129+Sacavém+Portugal">Obter Direções</a>
+<a class="btn b1" href="tel:+351962779099">Ligar para a loja</a>
+<p class="small">O mapa abre no Google Maps com a morada da loja.</p>
+</div>
+<form id="f" novalidate>
+<h2 style="font-size:1.4rem">Envie-nos uma mensagem</h2>
+<div><label for="n">Nome</label><input id="n" autocomplete="name"><div class="err" id="en"></div></div>
+<div><label for="e">E-mail</label><input id="e" type="email" autocomplete="email"><div class="err" id="ee"></div></div>
+<div><label for="m">Mensagem</label><textarea id="m" rows="4"></textarea><div class="err" id="em"></div></div>
+<button class="btn b1" type="submit">Enviar mensagem</button>
+<div id="ok" class="ok hidden" role="status">Obrigado! Recebemos a sua mensagem e entraremos em contacto em breve.</div>
+</form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+<strong>PTChina</strong> · Quinta do Carmo, n.º 4 A, 2685-129 Sacavém · <a href="tel:+351962779099">962 779 099</a><br>
+Os dados enviados pelo formulário são usados apenas para responder ao seu contacto.
+</div></footer>
+<a class="fab" href="tel:+351962779099" aria-label="Ligar para a loja">📞 Ligar</a>
+
+<script>
+// ===== CONFIGURAÇÃO FÁCIL DE EDITAR =====
+// Horário: preencher quando confirmado. null = por confirmar.
+const HORARIO=[["Segunda-feira",null],["Terça-feira","a partir das 09:00"],["Quarta-feira",null],["Quinta-feira",null],["Sexta-feira",null],["Sábado",null],["Domingo",null]];
+// Produtos de DEMONSTRAÇÃO. Substituir por artigos reais (nome, preço em €, tamanhos, descrição).
+const CATS=["Vestidos","Blusas","Calças","Casacos","Conjuntos","Acessórios"];
+const COR={Vestidos:"#c0272d",Blusas:"#1f6b3a",Calças:"#2d5a8a",Casacos:"#7a4b2a",Conjuntos:"#8a2d6a",Acessórios:"#a8801f"};
+const PRODUTOS=[
+{n:"Vestido exemplo",c:"Vestidos",p:35,t:["S","M","L"],d:"Descrição de exemplo.",novo:true},
+{n:"Vestido floral exemplo",c:"Vestidos",p:42,t:["M","L"],d:"Descrição de exemplo."},
+{n:"Blusa exemplo",c:"Blusas",p:18,t:["S","M","L","XL"],d:"Descrição de exemplo.",novo:true},
+{n:"Blusa básica exemplo",c:"Blusas",p:12,t:["S","M","L"],d:"Descrição de exemplo."},
+{n:"Calças exemplo",c:"Calças",p:28,t:["36","38","40","42"],d:"Descrição de exemplo."},
+{n:"Casaco exemplo",c:"Casacos",p:55,t:["M","L"],d:"Descrição de exemplo.",novo:true},
+{n:"Conjunto exemplo",c:"Conjuntos",p:38,t:["S","M","L"],d:"Descrição de exemplo."},
+{n:"Lenço exemplo",c:"Acessórios",p:9,t:[],d:"Descrição de exemplo."}
+];
+// =======================================
+const $=id=>document.getElementById(id);
+const card=p=>`<article class="card"><div class="ph" style="background:${COR[p.c]}">Foto ilustrativa · não é produto real</div><div class="in"><span class="tag">${p.c}${p.novo?'<span class="new">Novo</span>':''}</span><h3>${p.n}</h3><p class="small">${p.d}</p>${p.t.length?`<p class="small">Tamanhos: ${p.t.join(", ")}</p>`:''}<div class="price">${p.p.toFixed(2).replace(".",",")} € <span class="small">(preço de exemplo)</span></div><a class="btn b3" href="#contactos" style="margin-top:auto;text-align:center">Consultar disponibilidade</a></div></article>`;
+$("cats").innerHTML=CATS.map(c=>`<button class="cat" data-c="${c}">${c}</button>`).join("");
+CATS.forEach(c=>$("fc").insertAdjacentHTML("beforeend",`<option>${c}</option>`));
+$("news").innerHTML=PRODUTOS.filter(p=>p.novo).map(card).join("");
+function render(){
+ const q=$("q").value.trim().toLowerCase(),c=$("fc").value,pr=$("fp").value,nw=$("fn").value;
+ const r=PRODUTOS.filter(p=>(!q||p.n.toLowerCase().includes(q))&&(!c||p.c===c)&&(!nw||p.novo)&&(!pr||(pr==="999"?p.p>40:p.p<=+pr)));
+ $("list").innerHTML=r.map(card).join("");$("none").classList.toggle("hidden",r.length>0);
+}
+["q","fc","fp","fn"].forEach(i=>$(i).addEventListener("input",render));
+$("cats").addEventListener("click",e=>{const b=e.target.closest("[data-c]");if(!b)return;$("fc").value=b.dataset.c;render();$("colecoes").scrollIntoView()});
+render();
+$("hours").innerHTML=HORARIO.map(([d,h])=>`${d}: ${h||"por confirmar"}`).join("<br>");
+$("f").addEventListener("submit",e=>{
+ e.preventDefault();let ok=true;
+ const set=(id,msg)=>{$(id).textContent=msg;if(msg)ok=false};
+ set("en",$("n").value.trim().length<2?"Indique o seu nome.":"");
+ set("ee",/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($("e").value.trim())?"":"Indique um e-mail válido.");
+ set("em",$("m").value.trim().length<5?"Escreva uma mensagem.":"");
+ $("ok").classList.toggle("hidden",!ok);
+ if(ok)e.target.reset();
+});
+</script>
+</body>
+</html>
